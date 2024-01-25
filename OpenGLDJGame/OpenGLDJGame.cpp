@@ -37,6 +37,15 @@ int main() {
     }
     glfwMakeContextCurrent(window);
 
+    // ----- Create Array Buffer on the GPU and copy our vertices to GPU -------
+    float vertices[] = 
+    {
+        -0.5f, -0.5f, 0.0f,
+        0.5f, -0.5f, 0.0f,
+        0.0f, 0.5f, 0.0f
+    };
+
+
     // Initialize GLAD (connects OpenGL Functions)
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
     {
