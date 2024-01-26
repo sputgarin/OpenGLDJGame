@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="OpenGLBaseCode.cpp">
+    <ClCompile Include="OpenGLDJGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\glad\src\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

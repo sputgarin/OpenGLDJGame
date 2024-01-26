@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{b84db9a6-9862-444a-8e94-a0332529586f}</ProjectGuid>
-    <RootNamespace>OpenGLBaseCode</RootNamespace>
+    <ProjectGuid>{34B98ABA-3E10-46A7-9F19-F92A3BA0B866}</ProjectGuid>
+    <RootNamespace>OpenGLDJGame</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -71,8 +71,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(SolutionDir)ext\glfw-3.3.9.bin.WIN64\include;$(SolutionDir)ext\glad\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)ext\glfw-3.3.9.bin.WIN64\lib-vc2022;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)ext\glfw-3.3.9.bin.WIN64\include;$(SolutionDir)ext\glad\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -132,7 +132,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="OpenGLBaseCode.cpp" />
+    <ClCompile Include="..\ext\glad\src\glad.c" />
+    <ClCompile Include="OpenGLExerciseCode.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

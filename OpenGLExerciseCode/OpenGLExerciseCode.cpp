@@ -67,10 +67,15 @@ int main() {
 
     // ----- Create Array Buffer on the GPU and copy our vertices to GPU -------
     float vertices[] = {
-       -0.5f, -0.5f, 0.0f,
-        0.5f, -0.5f, 0.0f,
-        0.0f,  0.5f, 0.0f
+        -0.5f, -0.5f, 0.0f,
+         0.5f, -0.5f, 0.0f,
+         0.0f,  0.5f, 0.0f,
+
+         1.0f,  1.0f, 0.0f,
+         2.0f,  2.0f, 0.0f,
+         0.0f,  1.0f, 0.0f,
     };
+
     unsigned int VBO; // variable to store buffer id
     glGenBuffers(1, &VBO); // ask open gl to create a buffer
     glBindBuffer(GL_ARRAY_BUFFER, VBO); // tell gl to use this buffer
@@ -132,7 +137,7 @@ int main() {
         glClearColor(red, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        glDrawArrays(GL_TRIANGLES, 0, 3);
+        glDrawArrays(GL_TRIANGLES, 0, 6);
 
         // present (send the current frame to the computer screen)
         glfwSwapBuffers(window); // ??
