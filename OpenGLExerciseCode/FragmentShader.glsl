@@ -4,6 +4,7 @@ in vec4 vertexColor;
 void main()
 {
 pixelColor = vertexColor; // color
+// comment
 }
       
  
